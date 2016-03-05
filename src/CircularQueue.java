@@ -22,7 +22,7 @@ public class CircularQueue<E> implements FixedSizeQueueInterface<E> {
 	 */
 	public CircularQueue(int maxQueueSize) throws Exception {
 		super();
-		if (maxQueueSize!=0)
+		if (maxQueueSize<=0)
 		{
 			throw new Exception("Queue capacity invalid.");
 		}
