@@ -1,4 +1,3 @@
-
 import java.util.Queue;
 
 public interface FixedSizeQueueInterface<E> extends Queue<E> {
