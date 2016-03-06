@@ -48,9 +48,9 @@ public class CircularQueue<E> implements FixedSizeQueueInterface<E> {
 	public boolean offer(E arg0) {
 		boolean retVal = false;
 		if (this.size < this.capacity) {
-			this.dataArray[head+1] = arg0;
-			head = (head) % capacity;
 			this.size++;
+			this.dataArray[tail+1] = arg0;
+			tail = (tail) % capacity;
 			retVal = true;
 		}
 		return retVal;
